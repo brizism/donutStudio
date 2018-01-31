@@ -10,6 +10,12 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+// // Move bootstrap.scss to scss/bootstrap 
+// gulp.task('bootstrap_scss', function() {
+//     return gulp.src(['node_modules/bootstrap/scss/*', 'node_modules/bootstrap/scss/*mixins/*.scss', 'node_modules/bootstrap/scss/*utilities/*.scss'])
+//         .pipe(gulp.dest('src/scss/bootstrap'))
+// })
+
 // Move JS Files to src/js
 gulp.task('js', function() {
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js'])
