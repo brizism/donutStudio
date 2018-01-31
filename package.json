@@ -1,11 +1,10 @@
 {
-  "name": "Donut Studio",
+  "name": "DonutStudio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass src/scss/main.scss src/css/styles.css -w",
-    "serve": "live-server src/"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -19,15 +18,16 @@
   },
   "homepage": "https://github.com/brizism/donutStudio#readme",
   "devDependencies": {
+    "browser-sync": "^2.23.6",
     "grunt-svgmin": "^5.0.0",
-    "live-server": "^1.2.0",
-    "node-sass": "^4.7.2"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "masonry-layout": "^4.2.1",
-    "normalize.css": "^7.0.0",
     "popper.js": "^1.12.9",
     "vivus": "^0.4.3"
   }
