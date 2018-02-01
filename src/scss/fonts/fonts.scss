@@ -1,0 +1,11 @@
+@font-face {font-family: 'learning_curvebold';src: url('learning_curve_bold_ot_ps-webfont.woff') format('woff');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'AvenirLT-Medium';src: url('3078BB_0_0.eot');src: url('3078BB_0_0.eot?#iefix') format('embedded-opentype'),url('3078BB_0_0.woff2') format('woff2'),url('3078BB_0_0.woff') format('woff')}
+@font-face {font-family: 'AvenirLT-Light';src: url('3078BB_1_0.eot');src: url('3078BB_1_0.eot?#iefix') format('embedded-opentype'),url('3078BB_1_0.woff2') format('woff2'),url('3078BB_1_0.woff') format('woff')}
+
+
+
+
+// Fonts
+$font-learning-curve-bold: 'learning_curvebold';
+$font-text-light: 'AvenirLT-Light';
+$font-text-medium: 'AvenirLT-Medium';
