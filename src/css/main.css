@@ -388,3 +388,96 @@ template {
  */
 [hidden] {
   display: none; }
+
+@font-face {
+  font-family: 'learning_curvebold';
+  src: url("learning_curve_bold_ot_ps-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AvenirLT-Medium';
+  src: url("3078BB_0_0.eot");
+  src: url("3078BB_0_0.eot?#iefix") format("embedded-opentype"), url("3078BB_0_0.woff2") format("woff2"), url("3078BB_0_0.woff") format("woff"); }
+
+@font-face {
+  font-family: 'AvenirLT-Light';
+  src: url("3078BB_1_0.eot");
+  src: url("3078BB_1_0.eot?#iefix") format("embedded-opentype"), url("3078BB_1_0.woff2") format("woff2"), url("3078BB_1_0.woff") format("woff"); }
+
+* {
+  -webkit-font-smoothing: antialiased; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "AvenirLT-Light";
+  background-color: #f5e6e4; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 1.9rem; }
+
+p {
+  font-size: 1.6rem;
+  color: #262222; }
+
+nav {
+  background-color: #f5e6e4;
+  height: 10.1rem; }
+  nav .navbar-collapse .nav {
+    font-family: "AvenirLT-Medium";
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem; }
+    nav .navbar-collapse .nav .nav-link {
+      color: #262222; }
+
+.logo {
+  font-family: "learning_curvebold";
+  font-size: 9rem;
+  text-shadow: 0 2px 7px #EBC9C9;
+  text-transform: capitalize; }
+
+.container-fluid {
+  margin-top: 10.1rem; }
+
+.col img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.welcome-wrapper,
+._welcome-wrapper {
+  text-align: center; }
+
+._welcome-wrapper .ps-img {
+  height: 46.4rem;
+  background-image: url("../img/ds_01.jpg");
+  background-size: cover; }
+
+.welcome-wrapper h1 {
+  color: #bbadaa;
+  font-size: 3rem;
+  letter-spacing: 1.2rem;
+  text-transform: uppercase;
+  font-family: "AvenirLT-Medium";
+  padding: 9.2rem 0 6.5rem 0;
+  margin: 0; }
+
+._welcome-wrapper h1 {
+  color: #bbadaa;
+  font-size: 3rem;
+  letter-spacing: 1.2rem;
+  text-transform: uppercase;
+  font-family: "AvenirLT-Medium"; }
+
+.welcome-wrapper h2,
+._welcome-wrapper h2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-family: "AvenirLT-Medium"; }
