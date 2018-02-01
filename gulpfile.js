@@ -30,7 +30,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./src"  
     });
 
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss', 'src/scss/*base/*.scss', 'src/scss/*components/*.scss'], ['sass']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
     gulp.watch("src/js/index.js").on('change', browserSync.reload);
 });

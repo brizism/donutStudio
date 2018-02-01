@@ -19,7 +19,6 @@
   "homepage": "https://github.com/brizism/donutStudio#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "grunt-svgmin": "^5.0.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
   },
