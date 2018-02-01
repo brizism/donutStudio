@@ -1,0 +1,51 @@
+@mixin welcome-h1 {
+  color: $darkgrey;
+  font-size: 3rem;
+  letter-spacing: 1.2rem;
+  text-transform: uppercase;
+  font-family: $font-text-medium;
+}
+
+@mixin welcome-h2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-family: $font-text-medium;
+}
+
+.welcome-wrapper,
+._welcome-wrapper {
+  text-align: center;
+}
+
+._welcome-wrapper .ps-img {
+  height: 46.4rem;
+  background-image: url("../img/ds_01.jpg");
+  background-size: cover; 
+}
+
+.welcome-wrapper h1 {
+  @include welcome-h1;
+  padding: 9.2rem 0 6.5rem 0;
+  margin: 0; 
+}
+
+._welcome-wrapper h1 {
+  @include welcome-h1;
+}
+
+.welcome-wrapper h2,
+._welcome-wrapper h2 {
+  @include welcome-h2;
+}
+
+
+
+
+
+
+
+
+
+
+

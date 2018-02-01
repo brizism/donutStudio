@@ -1,0 +1,21 @@
+nav {
+  background-color: $mistyrose;
+  height: 10.1rem;
+
+  .navbar-collapse .nav {
+    font-family: $font-text-medium;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+
+    .nav-link {
+      color: $black;
+    }
+  }
+}
+.logo{
+  font-family: $font-learning-curve-bold;
+  font-size: 9rem;
+  text-shadow: $logo-shadow;
+  text-transform: capitalize;
+}

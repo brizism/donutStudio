@@ -1,0 +1,25 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-text-light;
+  background-color: $mistyrose;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+p {
+  font-size: 1.6rem;
+  color: $black;
+}
