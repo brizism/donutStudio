@@ -2,10 +2,40 @@
   margin-top: 10.1rem;
 }
 
-.col img {
+.col-img img {
   display: block;
   margin-left: auto;
-margin-right: auto;
+  margin-right: auto;
 }
 
+
+
 // Animations
+#donutStudioLogo{
+  opacity: 0;
+}
+
+.transform-wrapper {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: $mistyrose;
+  position: fixed;
+  z-index: 999;
+  transform-origin: 0 0;
+  transform: translate3d(0,0,0);
+}
+
+.transform-wrapper svg {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 99;
+}
+
+
+
