@@ -11,14 +11,14 @@ gulp.task('sass', function() {
 });
 
 // // Move bootstrap.scss to scss/bootstrap 
-// gulp.task('bootstrap_scss', function() {
-//     return gulp.src(['node_modules/bootstrap/scss/*', 'node_modules/bootstrap/scss/*mixins/*.scss', 'node_modules/bootstrap/scss/*utilities/*.scss'])
-//         .pipe(gulp.dest('src/scss/bootstrap'))
-// })
+gulp.task('bootstrap_scss', function() {
+    return gulp.src(['node_modules/bootstrap/scss/*', 'node_modules/bootstrap/scss/*mixins/*.scss', 'node_modules/bootstrap/scss/*utilities/*.scss'])
+        .pipe(gulp.dest('src/scss/bootstrap'))
+})
 
 // Move JS Files to src/js
 gulp.task('js', function() {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js', 'node_modules/vivus/dist/vivus.min.js'])
         .pipe(gulp.dest("src/js"))
         .pipe(browserSync.stream());
 });
@@ -47,4 +47,4 @@ gulp.task('fa', function() {
     .pipe(gulp.dest('src/css'))
 })
 
-gulp.task('default', ['js','serve', 'fa', 'fonts']);
+gulp.task('default', ['js','serve', 'fa', 'fonts', 'bootstrap_scss']);
