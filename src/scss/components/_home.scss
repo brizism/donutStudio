@@ -1,11 +1,16 @@
-.container-fluid {
-  margin-top: 10.1rem;
+.donuts-wrapper {
+  height: 100vh;
+
+  & > div{
+    padding-top: 16.1rem;
+  }
 }
 
 .col-img img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 4rem;
 }
 
 

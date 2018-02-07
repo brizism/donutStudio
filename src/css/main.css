@@ -6497,13 +6497,16 @@ nav {
   .col-img img {
     max-width: 80%; } }
 
-.container-fluid {
-  margin-top: 10.1rem; }
+.donuts-wrapper {
+  height: 100vh; }
+  .donuts-wrapper > div {
+    padding-top: 16.1rem; }
 
 .col-img img {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-bottom: 4rem; }
 
 #donutStudioLogo {
   opacity: 0; }
@@ -6557,5 +6560,12 @@ nav {
 ._welcome-wrapper h2 {
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-family: "AvenirLT-Medium"; }
+
+.donuts-section {
+  color: #bbadaa;
+  font-size: 3rem;
+  letter-spacing: 1.2rem;
   text-transform: uppercase;
   font-family: "AvenirLT-Medium"; }
