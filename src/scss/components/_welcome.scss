@@ -4,6 +4,8 @@
   letter-spacing: 1.2rem;
   text-transform: uppercase;
   font-family: $font-text-medium;
+  padding: 9.2rem 0 6.5rem 0;
+  margin: 0; 
 }
 
 @mixin welcome-h2 {
@@ -18,6 +20,12 @@
   text-align: center;
 }
 
+._welcome-wrapper .row .offset__right {
+  position: relative;
+  left: 7%;
+  z-index: 1;
+}
+
 ._welcome-wrapper .ps-img {
   height: 46.4rem;
   background-image: url("../img/ds_01.jpg");
@@ -26,12 +34,11 @@
 
 .welcome-wrapper h1 {
   @include welcome-h1;
-  padding: 9.2rem 0 6.5rem 0;
-  margin: 0; 
 }
 
 ._welcome-wrapper h1 {
   @include welcome-h1;
+  padding: 5.2rem 0 6.5rem 0;
 }
 
 .welcome-wrapper h2,
