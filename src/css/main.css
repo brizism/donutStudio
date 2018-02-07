@@ -6572,8 +6572,7 @@ nav {
 
 .grid {
   width: 70%;
-  margin: 0 auto;
-  background: red; }
+  margin: 0 auto; }
 
 .item {
   position: relative;
@@ -6583,11 +6582,25 @@ nav {
   .item:after {
     content: '';
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #f5e6e4;
     opacity: 0.3;
     transition: opacity 0.3s ease-in-out; }
+  .item:hover {
+    transform: scale(1.05); }
+    .item:hover:after {
+      opacity: 0; }
+  .item__details {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #bbadaa;
+    background: #fff;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    border: 1px solid #f5e6e4; }
 
 @supports (display: grid) {
   .grid {
