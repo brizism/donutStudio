@@ -1,9 +1,9 @@
-.donuts-section {
+.donuts-section .row .col {
   @include welcome-h1;
 }
 
 .grid {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -38,9 +38,11 @@
     text-align: center;
     color: $darkgrey;
     background: #fff;
-    text-transform: lowercase;
-    letter-spacing: 1px;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
     border: 1px solid $mistyrose;
+    font-size: 1.8rem;
+    padding-top: .4rem;
   }
 
 }
@@ -50,7 +52,7 @@
     display: grid;
     grid-gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50vh 30vh repeat(8, minmax(40vh, 1fr));
+    grid-template-rows: auto;
     grid-template-areas: 
       "big1     small1"
       "small2   small3"
@@ -93,7 +95,22 @@
     .item:nth-child(20) { grid-area: big4; }
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 992px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+        "big1     small1    small2"
+        "small3   small4    big2"
+        "small5   small6    small7"
+        "small8   small9    small10"
+        "small11  small12   small13"
+        "small14  small15   small16"
+        "big3     big4      auto"
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
     .grid {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
@@ -105,7 +122,24 @@
         "small9   small10 small11   small12"
         "small13  small14 small15   small16"
         "big3     big3    big4      big4"
-        "big3     big3    big4      big4"
+        "big3     big3    big4      big4";
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "big1     big1    small1    small2  small3"
+        "big1     big1    small4    small5  small6"
+        "small7   small8  small9    big2    big2"
+        "small10  small11 small12   big2    big2"
+        "small13  small14 small15   small16 big3";
+
+    .item:nth-child(20) {
+      grid-column: 3 / 4 ;
+    }
     }
   }
 
