@@ -11,9 +11,13 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 4rem;
+
+  @media (min-width: #{$breakpoint-laptop}) and (max-width: #{$breakpoint-large-screen - 1px}){
+    width: 50%;
+    padding-bottom: 1rem;
+  }
+
 }
-
-
 
 // Animations
 #donutStudioLogo{
