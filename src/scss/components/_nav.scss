@@ -1,3 +1,10 @@
+@mixin logo {
+  font-family: $font-learning-curve-bold;
+  font-size: 9rem;
+  text-shadow: $logo-shadow;
+  text-transform: capitalize;
+}
+
 nav {
   opacity: 0;
   background-color: $mistyrose;
@@ -15,10 +22,20 @@ nav {
   }
 }
 .logo{
-  font-family: $font-learning-curve-bold;
-  font-size: 9rem;
-  text-shadow: $logo-shadow;
-  text-transform: capitalize;
+  @include logo;
+}
+
+.logo-mobile {
+  @include logo;
+  display: none;
+
+  @media (max-width: $breakpoint-logo){
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 5.5rem;
+  }
 }
 
 #date {
@@ -30,10 +47,7 @@ nav {
 }
 
 
-
-
-
-@include media-breakpoint-down(xs) {
+@media (max-width: $breakpoint-logo){
   .navbar-collapse {
     background: #fff;
     height: 300px;
@@ -43,6 +57,10 @@ nav {
 
     ul li {
       font-size: 2.5rem;
+
+      p#date {
+        border-bottom: none;
+      }
     }
   }
   .navbar-collapse ul:nth-child(2){
@@ -51,14 +69,8 @@ nav {
 }
 
 
-@include media-breakpoint-down(lg) {
-  .col-img img {
-    max-width: 60%;
-  }
-}
 
-@include media-breakpoint-down(sm) {
-  .col-img img {
-    max-width: 80%;
-  }
-}
+
+
+
+
