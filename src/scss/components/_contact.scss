@@ -51,6 +51,39 @@
     letter-spacing: 2px;
     color: $black;
   }
+
+
+  @media (max-width: $breakpoint-logo){
+    flex: 100%;
+    max-width: 100%;
+    position: initial;
+    top: 0;
+    z-index: inherit;
+    height: 40rem;
+    left: 0;
+    padding: 4rem;
+    margin-bottom: 205px;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .social {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .button {
+    padding: 0;
+    padding-top: 1.675rem;
+    padding-bottom: 1.675rem;
+    font-size: 2rem;
+  }
 }
 
 

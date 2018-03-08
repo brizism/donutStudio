@@ -6759,3 +6759,26 @@ nav {
     display: inline-block;
     letter-spacing: 2px;
     color: #262222; }
+  @media (max-width: 991px) {
+    .contact-info {
+      flex: 100%;
+      max-width: 100%;
+      position: initial;
+      top: 0;
+      z-index: inherit;
+      height: 40rem;
+      left: 0;
+      padding: 4rem;
+      margin-bottom: 205px; } }
+  .contact-info h2 {
+    margin-bottom: 1rem; }
+  .contact-info p {
+    font-size: 2rem; }
+  .contact-info .social {
+    font-size: 1.8rem;
+    margin-bottom: 2rem; }
+  .contact-info .button {
+    padding: 0;
+    padding-top: 1.675rem;
+    padding-bottom: 1.675rem;
+    font-size: 2rem; }
