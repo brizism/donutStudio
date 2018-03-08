@@ -1,6 +1,5 @@
 @mixin welcome-h1 {
   color: $darkgrey;
-  font-size: 3rem;
   letter-spacing: 1.2rem;
   text-transform: uppercase;
   font-family: $font-text-medium;
@@ -30,10 +29,18 @@
   height: 46.4rem;
   background-image: url("../img/ds_01.jpg");
   background-size: cover; 
+
+  @media (min-width: #{$breakpoint-laptop}) and (max-width: #{$breakpoint-large-screen - 1px}) {
+    height: 37rem;
+  }
 }
 
 .welcome-wrapper h1 {
   @include welcome-h1;
+
+  @media (min-width: #{$breakpoint-laptop}) and (max-width: #{$breakpoint-large-screen - 1px}){
+    padding-bottom: 2.5rem;
+  }
 }
 
 ._welcome-wrapper h1 {
@@ -45,7 +52,6 @@
 ._welcome-wrapper h2 {
   @include welcome-h2;
 }
-
 
 
 
