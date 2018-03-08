@@ -4,6 +4,22 @@
   & > div{
     padding-top: 16.1rem;
   }
+
+  @include media-breakpoint-down(lg) {
+    .donuts-wrapper > div {
+      padding-top: 13rem;
+    }
+    .col-img img {
+      max-width: 60%;
+      padding-bottom: 0;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .col-img img {
+      max-width: 80%;
+    }
+  }
 }
 
 .col-img img {
@@ -45,6 +61,8 @@
     text-align: center;
     z-index: 99;
 }
+
+
 
 
 
