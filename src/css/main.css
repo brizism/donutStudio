@@ -6446,6 +6446,9 @@ body {
 
 h1 {
   font-size: 3rem; }
+  @media (min-width: 1224px) and (max-width: 1823px) {
+    h1 {
+      font-size: 2.5rem; } }
 
 h2 {
   font-size: 1.9rem; }
@@ -6508,6 +6511,10 @@ nav {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 4rem; }
+  @media (min-width: 1224px) and (max-width: 1823px) {
+    .col-img img {
+      width: 50%;
+      padding-bottom: 1rem; } }
 
 #donutStudioLogo {
   opacity: 0; }
@@ -6545,19 +6552,23 @@ nav {
   height: 46.4rem;
   background-image: url("../img/ds_01.jpg");
   background-size: cover; }
+  @media (min-width: 1224px) and (max-width: 1823px) {
+    ._welcome-wrapper .ps-img {
+      height: 37rem; } }
 
 .welcome-wrapper h1 {
   color: #bbadaa;
-  font-size: 3rem;
   letter-spacing: 1.2rem;
   text-transform: uppercase;
   font-family: "AvenirLT-Medium";
   padding: 9.2rem 0 6.5rem 0;
   margin: 0; }
+  @media (min-width: 1224px) and (max-width: 1823px) {
+    .welcome-wrapper h1 {
+      padding-bottom: 2.5rem; } }
 
 ._welcome-wrapper h1 {
   color: #bbadaa;
-  font-size: 3rem;
   letter-spacing: 1.2rem;
   text-transform: uppercase;
   font-family: "AvenirLT-Medium";
@@ -6574,7 +6585,6 @@ nav {
 
 .donuts-section .row .col {
   color: #bbadaa;
-  font-size: 3rem;
   letter-spacing: 1.2rem;
   text-transform: uppercase;
   font-family: "AvenirLT-Medium";

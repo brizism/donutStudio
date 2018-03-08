@@ -14,6 +14,10 @@ body {
 
 h1 {
   font-size: 3rem;
+
+  @media (min-width: #{$breakpoint-laptop}) and (max-width: #{$breakpoint-large-screen - 1px}) {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
