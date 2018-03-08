@@ -1,4 +1,4 @@
-@mixin welcome-h1 {
+@mixin headline {
   color: $darkgrey;
   letter-spacing: 1.2rem;
   text-transform: uppercase;
@@ -36,7 +36,7 @@
 }
 
 .welcome-wrapper h1 {
-  @include welcome-h1;
+  @include headline;
 
   @media (min-width: #{$breakpoint-laptop}) and (max-width: #{$breakpoint-large-screen - 1px}){
     padding-bottom: 2.5rem;
@@ -44,7 +44,7 @@
 }
 
 ._welcome-wrapper h1 {
-  @include welcome-h1;
+  @include headline;
   padding: 5.2rem 0 6.5rem 0;
 }
 

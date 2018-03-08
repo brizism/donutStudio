@@ -6708,3 +6708,54 @@ nav {
       grid-template-areas: "big1     big1    small1    small2  small3" "big1     big1    small4    small5  small6" "small7   small8  small9    big2    big2" "small10  small11 small12   big2    big2" "small13  small14 small15   small16 big3"; }
       .grid .item:nth-child(20) {
         grid-column: 3 / 4; } } }
+
+#map {
+  height: 50rem;
+  bottom: 19rem; }
+
+.contact-section .row .col {
+  color: #bbadaa;
+  letter-spacing: 1.2rem;
+  text-transform: uppercase;
+  font-family: "AvenirLT-Medium";
+  padding: 9.2rem 0 6.5rem 0;
+  margin: 0; }
+
+.contact-info {
+  background: #f5e6e4;
+  position: relative;
+  top: 13rem;
+  z-index: 9;
+  height: 64rem;
+  left: 3rem;
+  padding: 8rem; }
+  .contact-info h2 {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-family: "AvenirLT-Medium";
+    font-size: 2rem;
+    color: #bbadaa;
+    margin-bottom: 3rem; }
+  .contact-info p {
+    font-size: 3.6rem;
+    line-height: 1;
+    letter-spacing: 3px; }
+  .contact-info .social {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    margin-bottom: 8rem; }
+  .contact-info .button {
+    border: 3px solid #bbadaa;
+    padding: 11.375rem 9.25rem;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding-top: 2.875rem;
+    padding-bottom: 2.875rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    color: #262222; }
