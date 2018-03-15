@@ -68,12 +68,13 @@ $(() => {
 
 
 
-
+///////// Displays Google Map /////////
 function initMap() {
   // Styles a map in night mode.
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 40.85398676514279, lng: -73.88977247004469},
-    zoom: 18,
+  const myLatLng = new google.maps.LatLng(40.853846, -73.889586);
+  const map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 20,
     styles: [
       {
         "elementType": "geometry",
@@ -347,4 +348,15 @@ function initMap() {
       }
     ]
   });
+
+  const icon = {
+    url: '../img/donut-marker.svg',
+    scaledSize: new google.maps.Size(50, 50),
+  }
+  const marker = new google.maps.Marker({
+    position: myLatLng,
+    icon
+  });
+
+  marker.setMap(map)
 }
