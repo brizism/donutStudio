@@ -6471,7 +6471,7 @@ nav {
   @media (min-width: 1024px) and (max-width: 1280px) {
     nav .nav-item p,
     nav .nav-item a {
-      font-size: .7rem; } }
+      font-size: 1.3rem; } }
 
 .logo {
   font-family: "learning_curvebold";
@@ -6480,7 +6480,7 @@ nav {
   text-transform: capitalize; }
   @media (min-width: 1024px) and (max-width: 1280px) {
     .logo {
-      font-size: 5rem !important; } }
+      font-size: 7rem !important; } }
 
 .logo-mobile {
   font-family: "learning_curvebold";
@@ -6490,7 +6490,7 @@ nav {
   display: none; }
   @media (min-width: 1024px) and (max-width: 1280px) {
     .logo-mobile {
-      font-size: 5rem !important; } }
+      font-size: 7rem !important; } }
   @media (max-width: 991px) {
     .logo-mobile {
       display: block;
