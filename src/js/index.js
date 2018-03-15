@@ -66,11 +66,8 @@ $(() => {
       const items = Array.from(document.querySelectorAll('.item'));
       const donutsContent = document.getElementById('donuts-modal__content');
       const modal = document.getElementById('donuts-modal');
-      console.log(items)
       items.map(item => {
         item.addEventListener('click', () => {
-          console.log(item.innerText)
-          console.log(item.children[0].outerHTML);
           modal.style.display = 'block';
           let output = `
             <div class="donuts-modal__wrapper">
@@ -378,7 +375,7 @@ function initMap() {
   });
 
   const icon = {
-    url: '../img/donut-marker.svg',
+    url: 'src/img/donut-marker.svg',
     scaledSize: new google.maps.Size(50, 50),
   }
   const marker = new google.maps.Marker({
