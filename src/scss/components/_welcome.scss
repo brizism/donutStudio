@@ -1,3 +1,4 @@
+// mixins
 @mixin headline {
   color: $darkgrey;
   letter-spacing: 1.2rem;
@@ -5,6 +6,12 @@
   font-family: $font-text-medium;
   padding: 9.2rem 0 6.5rem 0;
   margin: 0; 
+
+  @media (max-width: $breakpoint-phone){
+    h1 {
+      font-size: 2rem;
+    }
+  }
 }
 
 @mixin welcome-h2 {
@@ -14,21 +21,42 @@
   font-family: $font-text-medium;
 }
 
+
+// styles
 .welcome-wrapper,
 ._welcome-wrapper {
   text-align: center;
+
+  @media (max-width: $breakpoint-phone){
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      padding: 0 2rem 0 2rem;
+    }
+  }
 }
 
 ._welcome-wrapper .row .offset__right {
   position: relative;
   left: 7%;
   z-index: 1;
+
+  @media (max-width: $breakpoint-phone){
+    left: 0;
+  }
 }
 
 ._welcome-wrapper .ps-img {
   height: 60rem;
   background-image: url("../img/ds_01.jpg");
   background-size: cover; 
+
+  @media (max-width: $breakpoint-phone){
+    height: 30rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: #{$breakpoint-laptop}) and (max-width: #{$breakpoint-large-screen - 1px}) {
     height: 37rem;
@@ -52,4 +80,5 @@
 ._welcome-wrapper h2 {
   @include welcome-h2;
 }
+
 

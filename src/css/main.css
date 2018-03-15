@@ -6468,12 +6468,19 @@ nav {
     letter-spacing: 0.3rem; }
     nav .navbar-collapse .nav .nav-link {
       color: #262222; }
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    nav .nav-item p,
+    nav .nav-item a {
+      font-size: .7rem; } }
 
 .logo {
   font-family: "learning_curvebold";
   font-size: 9rem;
   text-shadow: 0 2px 7px #EBC9C9;
   text-transform: capitalize; }
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .logo {
+      font-size: 5rem !important; } }
 
 .logo-mobile {
   font-family: "learning_curvebold";
@@ -6481,6 +6488,9 @@ nav {
   text-shadow: 0 2px 7px #EBC9C9;
   text-transform: capitalize;
   display: none; }
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .logo-mobile {
+      font-size: 5rem !important; } }
   @media (max-width: 991px) {
     .logo-mobile {
       display: block;
@@ -6559,16 +6569,31 @@ nav {
 .welcome-wrapper,
 ._welcome-wrapper {
   text-align: center; }
+  @media (max-width: 414px) {
+    .welcome-wrapper h1,
+    ._welcome-wrapper h1 {
+      font-size: 2rem; }
+    .welcome-wrapper p,
+    ._welcome-wrapper p {
+      padding: 0 2rem 0 2rem; } }
 
 ._welcome-wrapper .row .offset__right {
   position: relative;
   left: 7%;
   z-index: 1; }
+  @media (max-width: 414px) {
+    ._welcome-wrapper .row .offset__right {
+      left: 0; } }
 
 ._welcome-wrapper .ps-img {
   height: 60rem;
   background-image: url("../img/ds_01.jpg");
   background-size: cover; }
+  @media (max-width: 414px) {
+    ._welcome-wrapper .ps-img {
+      height: 30rem;
+      background-size: contain;
+      background-repeat: no-repeat; } }
   @media (min-width: 1224px) and (max-width: 1823px) {
     ._welcome-wrapper .ps-img {
       height: 37rem; } }
@@ -6580,6 +6605,9 @@ nav {
   font-family: "AvenirLT-Medium";
   padding: 9.2rem 0 6.5rem 0;
   margin: 0; }
+  @media (max-width: 414px) {
+    .welcome-wrapper h1 h1 {
+      font-size: 2rem; } }
   @media (min-width: 1224px) and (max-width: 1823px) {
     .welcome-wrapper h1 {
       padding-bottom: 2.5rem; } }
@@ -6592,6 +6620,9 @@ nav {
   padding: 9.2rem 0 6.5rem 0;
   margin: 0;
   padding: 5.2rem 0 6.5rem 0; }
+  @media (max-width: 414px) {
+    ._welcome-wrapper h1 h1 {
+      font-size: 2rem; } }
 
 .welcome-wrapper h2,
 ._welcome-wrapper h2 {
@@ -6607,6 +6638,9 @@ nav {
   font-family: "AvenirLT-Medium";
   padding: 9.2rem 0 6.5rem 0;
   margin: 0; }
+  @media (max-width: 414px) {
+    .donuts-section .row .col h1 {
+      font-size: 2rem; } }
 
 .grid {
   width: 80%;
@@ -6709,6 +6743,88 @@ nav {
       .grid .item:nth-child(20) {
         grid-column: 3 / 4; } } }
 
+.donuts-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3; }
+  .donuts-modal__content {
+    margin: auto;
+    background-color: #f5e6e4;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 50%;
+    height: 40%;
+    top: 25%;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: animatezoom 0.6s; }
+    @media (max-width: 1024px) {
+      .donuts-modal__content {
+        width: 90%;
+        height: auto;
+        padding: 2rem; } }
+  .donuts-modal__wrapper {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    background: white;
+    margin: 0 auto;
+    position: relative;
+    top: 5%;
+    text-align: center; }
+    .donuts-modal__wrapper span {
+      position: absolute;
+      right: 0;
+      padding: 1rem;
+      color: #bbadaa;
+      cursor: pointer;
+      font-size: 4rem; }
+    @media (max-width: 1024px) {
+      .donuts-modal__wrapper {
+        display: block; } }
+  .donuts-modal__img {
+    display: flex;
+    width: 50%; }
+    .donuts-modal__img img {
+      max-width: 70%;
+      display: block;
+      margin: auto; }
+    @media (max-width: 1024px) {
+      .donuts-modal__img {
+        display: block;
+        width: 100%;
+        padding-top: 5rem; } }
+  .donuts-modal__info {
+    width: 50%;
+    padding-right: 3rem;
+    display: block;
+    word-break: break-all; }
+    .donuts-modal__info h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      margin: 10rem 0 3rem 0;
+      letter-spacing: 4px; }
+    @media (max-width: 1024px) {
+      .donuts-modal__info {
+        width: 100%;
+        padding-right: 0;
+        padding: 3rem; }
+        .donuts-modal__info h1 {
+          font-size: 3rem; } }
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
 #map {
   height: 50rem;
   bottom: 19rem; }
@@ -6720,6 +6836,9 @@ nav {
   font-family: "AvenirLT-Medium";
   padding: 9.2rem 0 6.5rem 0;
   margin: 0; }
+  @media (max-width: 414px) {
+    .contact-section .row .col h1 {
+      font-size: 2rem; } }
 
 .contact-info {
   background: #f5e6e4;
