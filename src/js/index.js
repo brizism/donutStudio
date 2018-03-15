@@ -375,7 +375,7 @@ function initMap() {
   });
 
   const icon = {
-    url: 'src/img/donut-marker.svg',
+    url: 'img/donut-marker.svg',
     scaledSize: new google.maps.Size(50, 50),
   }
   const marker = new google.maps.Marker({
