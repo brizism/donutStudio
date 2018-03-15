@@ -62,8 +62,36 @@ $(() => {
           $(".navbar-collapse").collapse('hide');
       });
   
+      // Donuts gallery modal 
+      const items = Array.from(document.querySelectorAll('.item'));
+      const donutsContent = document.getElementById('donuts-modal__content');
+      const modal = document.getElementById('donuts-modal');
+      console.log(items)
+      items.map(item => {
+        item.addEventListener('click', () => {
+          console.log(item.innerText)
+          console.log(item.children[0].outerHTML);
+          modal.style.display = 'block';
+          let output = `
+            <div class="donuts-modal__wrapper">
+              <span id="close">&times;</span>
+              <div class="donuts-modal__img">${item.children[0].outerHTML}</div>
+              <div class="donuts-modal__info">
+                <h1>${item.innerText}</h1>
+                <p></p>
+              </div>
+            </div>
+          `
+          donutsContent.innerHTML = output;
 
-      
+          closeModal();
+        })
+      });
+
+      function closeModal(){
+        document.getElementById('close').onclick = () => modal.style.display = 'none';
+        window.onclick = e => e.target == modal ? modal.style.display = 'none' : modal;
+      }
 });
 
 
