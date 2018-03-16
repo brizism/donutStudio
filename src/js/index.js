@@ -75,7 +75,7 @@ $(() => {
               <div class="donuts-modal__img">${item.children[0].outerHTML}</div>
               <div class="donuts-modal__info">
                 <h1>${item.innerText}</h1>
-                <p></p>
+                <p>${item.innerText} - prides itself on its cake and old-fashioned doughnuts, so be sure to pick up one of their best iterations.</p>
               </div>
             </div>
           `
